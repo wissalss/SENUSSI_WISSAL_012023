@@ -37,7 +37,7 @@ function Login() {
     <div className="pageContainer">
       <main className="main bg-dark">
         <section className="sign-in-content">
-          <i className="fa fa-user-circle sign-in-icon"></i>
+          {/* <FaUserCircle/> */}
           <h1>Sign In</h1>
           <form onSubmit={login}>
             <FormConnect setEmailValue={(e) => setEmail(e.target.value)} setPasswordValue={(e) => setPassword(e.target.value)} />

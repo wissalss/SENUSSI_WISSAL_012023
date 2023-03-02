@@ -2,11 +2,13 @@ import React, { useEffect } from 'react'
 import logo from "../../assets/argentBankLogo.png"
 import "./Header.css"
 import {FaUserCircle} from 'react-icons/fa'
+import {FaSignOutAlt} from 'react-icons/fa'
 import { Link, useNavigate } from 'react-router-dom'
 import { selectUser } from "../../redux/Selector"
 import { useSelector } from "react-redux/es/hooks/useSelector"
 import { useDispatch } from "react-redux"
 import { signOut, fetchUserData } from "../../redux/Actions"
+
 
 function Header() {
 
@@ -48,11 +50,11 @@ function Header() {
             </Link>
             <div>
                 <Link to="/profile" className="main-nav-item">
-                    <i className="fa fa-user-circle"></i>
+                    <FaUserCircle/>
                     {userData.data.firstName}
                 </Link>
                 <Link to="/" onClick={clearStorage} className="main-nav-item">
-                    <i className="fa fa-sign-out"></i>
+                    <FaSignOutAlt/>
                     Sign Out
                 </Link>
             </div>
