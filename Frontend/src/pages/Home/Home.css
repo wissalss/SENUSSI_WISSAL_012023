@@ -65,6 +65,29 @@
         font-size: 1.2rem;
     }
 }
+@media (max-width: 920px) {
+  .hero {
+      height: 550px;
+      background-position: 0% 33%;
+  }
+
+  .hero-content {
+      position: absolute;
+      top: 150px;
+      right: 30px;
+      width: 150px;
+      margin: 0;
+  }
+
+  .hero-content .subtitle {
+      font-size: 1.5rem;
+  }
+
+  .hero-content .text {
+      font-size: 1.2rem;
+  }
+}
+
 
             /* features */
 .features {

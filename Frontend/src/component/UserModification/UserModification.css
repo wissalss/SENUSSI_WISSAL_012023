@@ -38,3 +38,12 @@
     border-radius: 5px;
     color: #00bc77;
 }
+
+@media screen and (max-width:940px)  {
+    .inputChange{    
+        height: 30px;
+        width: 90px;
+        border: 2px solid;
+        border-radius: 5px;
+    }
+  }
